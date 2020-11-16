@@ -1,6 +1,7 @@
 package godaemon
 
 import (
+	"fmt"
 	"io"
 	"os"
 )
@@ -13,5 +14,6 @@ type DaemonAttr struct {
 }
 
 func MakeDaemon(attrs *DaemonAttr) (io.Reader, io.Reader, error) {
+	fmt.Println("call window lib function .....")
 	return nil, nil, nil
 }
